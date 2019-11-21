@@ -1,0 +1,19 @@
+.about {
+	background-color: rgb(34, 34, 34);
+	padding-top: 100px;
+
+	&__list {
+		margin-bottom: 40px;
+
+		&__item {
+			color: #ffffff;
+			font-family: Lato;
+			font-size: 1rem;
+			font-weight: 400;
+
+			&:not(:last-child) {
+				margin-bottom: 15px;
+			}
+		}
+	}
+}

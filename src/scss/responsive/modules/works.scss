@@ -1,0 +1,99 @@
+@media only screen and (max-width: 1200px) {
+	.works {
+		$works: &;
+
+		&__list {
+		}
+
+		&__item {
+			$works__item: #{$works}__item;
+
+			flex: 50%;
+			width: 50%;
+
+			&__content {
+				&:not(:last-child) {
+				}
+
+				img {
+				}
+			}
+
+			&__hover {
+				&__content {
+				}
+			}
+
+			&__title {
+			}
+
+			&__subtitle {
+			}
+
+			&__buttons {
+			}
+
+			&:hover #{$works__item}__hover {
+			}
+
+			&:hover #{$works__item}__content img {
+			}
+		}
+
+		&__specs {
+		}
+	}
+}
+
+@media only screen and (max-width: 1000px) {
+}
+
+@media only screen and (max-width: 769px) {
+}
+
+@media only screen and (max-width: 500px) {
+	.works {
+		$works: &;
+
+		&__list {
+		}
+
+		&__item {
+			$works__item: #{$works}__item;
+
+			flex: 100%;
+			width: 100%;
+
+			&__content {
+				&:not(:last-child) {
+				}
+
+				img {
+				}
+			}
+
+			&__hover {
+				&__content {
+				}
+			}
+
+			&__title {
+			}
+
+			&__subtitle {
+			}
+
+			&__buttons {
+			}
+
+			&:hover #{$works__item}__hover {
+			}
+
+			&:hover #{$works__item}__content img {
+			}
+		}
+
+		&__specs {
+		}
+	}
+}

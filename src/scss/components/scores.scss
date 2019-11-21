@@ -1,0 +1,31 @@
+.scores {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 20px 0;
+
+	&__item {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+
+		&__icon {
+			font-size: 2.8125rem;
+			color: #30a3f0;
+			margin-bottom: 25px;
+		}
+
+		&__title {
+			color: #707070;
+			margin-bottom: 25px;
+		}
+
+		&__count {
+			font-size: 2.8125rem;
+			font-weight: 700;
+			letter-spacing: 1.91px;
+			color: #fff;
+		}
+	}
+}

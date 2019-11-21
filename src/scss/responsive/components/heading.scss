@@ -1,0 +1,49 @@
+@media only screen and (max-width: 769px) {
+	.heading {
+		$heading_class: &;
+
+		max-width: 80%;
+
+		#{$heading_class}__square_devider {
+			span {
+			}
+
+			&::after {
+			}
+
+			&::before {
+			}
+		}
+
+		&--left {
+			#{$heading_class}__square_devider::after {
+			}
+		}
+
+		&--vdevider {
+			#{$heading_class}__devider {
+			}
+		}
+
+		&--vdevider {
+			#{$heading_class}__subtitle {
+			}
+
+			#{$heading_class}__title {
+			}
+
+			#{$heading_class}__body {
+			}
+		}
+
+		&__subtitle {
+		}
+
+		&__title {
+			font-size: 2.5rem;
+		}
+
+		&__body {
+		}
+	}
+}

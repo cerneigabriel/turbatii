@@ -1,0 +1,38 @@
+@media only screen and (max-width: 1200px) {
+}
+
+@media only screen and (max-width: 1000px) {
+	.carousel {
+	}
+
+	.carousel__button {
+		&--prev {
+			left: 1rem !important;
+		}
+
+		&--next {
+			right: 1rem !important;
+		}
+	}
+
+	.owl-carousel-partners .owl-stage {
+	}
+}
+
+@media only screen and (max-width: 1000px) {
+	.carousel {
+	}
+
+	.carousel__button {
+		display: none;
+
+		&--prev {
+		}
+
+		&--next {
+		}
+	}
+
+	.owl-carousel-partners .owl-stage {
+	}
+}

@@ -1,0 +1,42 @@
+@media only screen and (max-width: 1200px) {
+	.about {
+		&__list {
+			flex-direction: column;
+
+			&__item {
+				width: 100%;
+				flex: 100%;
+
+				&:not(:last-child) {
+				}
+			}
+		}
+
+		&__hero {
+			margin: 5rem auto 0;
+			max-width: 90%;
+		}
+	}
+}
+
+@media only screen and (max-width: 1000px) {
+	.about {
+		&__list {
+			&__item {
+				&:not(:last-child) {
+				}
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: 769px) {
+	.about {
+		&__list {
+			&__item {
+				&:not(:last-child) {
+				}
+			}
+		}
+	}
+}

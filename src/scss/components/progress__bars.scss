@@ -1,0 +1,41 @@
+.progress__bars {
+	&__item {
+		&:not(:last-child) {
+			padding-bottom: 40px;
+		}
+
+		&__info {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+		}
+
+		&__title {
+			color: #999999;
+		}
+
+		&__percent {
+			color: #444444;
+		}
+
+		&__bar {
+			width: 100%;
+			height: 10px;
+			background-color: #333333;
+			position: relative;
+			overflow: hidden;
+			border-radius: 10px;
+			margin-top: 15px;
+
+			span {
+				content: '';
+				position: absolute;
+				top: 0;
+				left: 0;
+				bottom: 0;
+				background-color: #30a3f0;
+				transition: width 0.4s ease-out;
+			}
+		}
+	}
+}

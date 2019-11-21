@@ -1,0 +1,31 @@
+.form {
+	&__input {
+		border: 1px solid rgba(255, 255, 255, 0.15);
+		border-radius: 5px;
+		width: 100%;
+		padding: 15px;
+		background-color: transparent;
+		font-size: 0.875rem;
+		color: #fff;
+	}
+
+	&__group {
+		position: relative;
+
+		&__input {
+			padding-right: 30px;
+		}
+
+		&__icon {
+			position: absolute;
+			top: 0;
+			right: 15px;
+			bottom: 0;
+			margin: auto;
+			color: #30a3f0;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+	}
+}

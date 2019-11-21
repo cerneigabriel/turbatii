@@ -1,0 +1,112 @@
+.bread_collapse {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: stretch;
+
+	&__item {
+		$bread__item: &;
+
+		margin-bottom: 20px;
+		color: #fff;
+		width: 100%;
+
+		&__tab {
+			width: inherit;
+			padding: 12px 25px;
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			background-color: #333;
+			cursor: pointer;
+
+			&__title {
+			}
+
+			&__icon {
+				width: 14px;
+				height: 14px;
+				background-color: #fff;
+				border-radius: 4px;
+				position: relative;
+
+				&::before {
+					content: '';
+					position: absolute;
+					top: 2px;
+					bottom: 2px;
+					left: 2px;
+					right: 2px;
+					margin: auto;
+					height: 2px;
+					width: auto;
+					background-color: #222;
+					transition: all 0.4s ease-out;
+				}
+
+				&::after {
+					content: '';
+					position: absolute;
+					top: 2px;
+					bottom: 2px;
+					left: 2px;
+					right: 2px;
+					margin: auto;
+					width: 2px;
+					height: auto;
+					background-color: #222;
+					transition: all 1s ease-out;
+				}
+			}
+		}
+
+		&__content {
+			display: none;
+			height: 0;
+			padding: 0;
+			width: inherit;
+			overflow: hidden;
+			background-color: #333333;
+			position: relative;
+			padding: 0 31px;
+			clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+			transition: all 0.4s ease-out;
+		}
+
+		&--active {
+			#{$bread__item} {
+				&__tab {
+					background-color: #30a3f0;
+
+					&__title {
+					}
+
+					&__icon {
+						&::after,
+						&::before {
+							background-color: #30a3f0;
+						}
+
+						&::after {
+							height: 0;
+						}
+					}
+				}
+
+				&__content {
+					height: 100%;
+					display: block;
+					clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+
+					& > :first-child {
+						margin-top: 40px;
+					}
+
+					& > :last-child {
+						margin-bottom: 40px;
+					}
+				}
+			}
+		}
+	}
+}

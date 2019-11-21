@@ -1,0 +1,29 @@
+.carousel {
+	position: relative;
+	width: 100%;
+}
+
+.carousel__button {
+	&--prev {
+		position: absolute;
+		top: -3rem;
+		bottom: 0;
+		left: 50px;
+		margin: auto;
+		z-index: 50;
+	}
+
+	&--next {
+		position: absolute;
+		top: -3rem;
+		bottom: 0;
+		right: 50px;
+		margin: auto;
+		z-index: 50;
+	}
+}
+
+.owl-carousel-partners .owl-stage {
+	align-items: center;
+	display: flex;
+}

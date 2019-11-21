@@ -1,0 +1,45 @@
+{
+  "name": "turbatii",
+  "version": "1.0.0",
+  "description": "school project",
+  "main": "public/index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Cernei Gabriel",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^4.3.1",
+    "countup.js": "^2.0.4",
+    "font-awesome": "^4.7.0",
+    "jquery": "^3.4.1",
+    "owl.carousel": "^2.3.4"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.6.2",
+    "@babel/preset-env": "^7.6.2",
+    "@fortawesome/fontawesome-free": "^5.11.2",
+    "autoprefixer": "^9.6.1",
+    "browser-sync": "^2.26.7",
+    "countup": "^1.8.2",
+    "cssnano": "^4.1.10",
+    "del": "^5.1.0",
+    "eslint": "^6.5.1",
+    "eslint-config-node": "^4.0.0",
+    "eslint-config-prettier": "^6.3.0",
+    "eslint-plugin-node": "^10.0.0",
+    "eslint-plugin-prettier": "^3.1.1",
+    "gulp": "^4.0.2",
+    "gulp-babel": "^8.0.0",
+    "gulp-eslint": "^6.0.0",
+    "gulp-imagemin": "^6.1.0",
+    "gulp-newer": "^1.4.0",
+    "gulp-plumber": "^1.2.1",
+    "gulp-postcss": "^8.0.0",
+    "gulp-rename": "^1.4.0",
+    "gulp-sass": "^4.0.2",
+    "prettier": "^1.18.2",
+    "webpack": "^4.41.0",
+    "webpack-stream": "^5.2.1"
+  }
+}

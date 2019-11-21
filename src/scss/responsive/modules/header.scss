@@ -1,0 +1,16 @@
+@media only screen and (max-width: 1200px) {
+	.header {
+		min-height: 100vh;
+
+		.owl-carousel .item {
+		}
+	}
+}
+
+@media only screen and (max-width: 1000px) {
+	.header {
+		padding: 5rem 0;
+		.owl-carousel .item {
+		}
+	}
+}

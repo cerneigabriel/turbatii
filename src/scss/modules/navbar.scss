@@ -1,0 +1,103 @@
+.navbar {
+	background-color: rgb(7, 7, 7);
+
+	&__utils {
+		height: 4.1875rem;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		background-color: rgb(7, 7, 7);
+
+		&__link {
+			color: rgb(76, 76, 76);
+			font-size: 0.875rem;
+			transition: color 0.3s ease-out;
+
+			&:not(:last-child) {
+				padding: 0 1.59375rem 0 0;
+			}
+
+			&:hover {
+				color: rgb(129, 129, 129);
+			}
+
+			i {
+				color: rgb(48, 163, 240);
+				margin-right: 0.5625rem;
+			}
+		}
+	}
+
+	&__bar {
+		background-color: rgb(34, 34, 34);
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		padding: 0 2.875rem;
+		height: 6.25rem;
+
+		&__brand {
+			color: rgb(255, 255, 255);
+			font-size: 1.875rem;
+			font-weight: 300;
+			display: flex;
+			align-items: center;
+			flex-wrap: wrap;
+
+			img {
+				height: 3.0625rem;
+				margin-right: 0.625rem;
+			}
+		}
+
+		&__toggler {
+			display: none !important;
+			margin-left: auto;
+		}
+
+		&__collapse {
+			transition: transform 0.4s ease-out;
+
+			&--open {
+				transform: translateX(0) !important;
+			}
+		}
+
+		&__nav {
+			$nav_class: '.nav';
+
+			display: flex;
+			align-items: center;
+			justify-content: flex-end;
+			flex-wrap: wrap;
+
+			#{$nav_class}__item {
+				padding: 0.625rem 1rem;
+				margin-left: 0.625rem;
+				border: 0.0625rem solid transparent;
+				border-radius: 0.3125rem;
+				transition: border-color 0.3s ease-out;
+
+				&:hover:not(.nav__item--nohover),
+				&--active {
+					border-color: rgb(48, 163, 240);
+
+					#{$nav_class}__link {
+						color: rgb(48, 163, 240);
+					}
+				}
+			}
+
+			#{$nav_class}__link {
+				color: rgb(112, 112, 112);
+				transition: color 0.3s ease-out;
+
+				&:hover {
+					color: rgb(48, 163, 240);
+				}
+			}
+		}
+	}
+}

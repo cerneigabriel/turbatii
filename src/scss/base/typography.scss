@@ -1,0 +1,234 @@
+// Include Lato Fonts
+@include font-face('Lato', '../../fonts/Lato-Black.ttf', 900, normal, ttf);
+@include font-face(
+	'Lato',
+	'../../fonts/Lato-BlackItalic.ttf',
+	900,
+	italic,
+	ttf
+);
+@include font-face('Lato', '../../fonts/Lato-Bold.ttf', 7000, normal, ttf);
+@include font-face('Lato', '../../fonts/Lato-BoldItalic.ttf', 700, italic, ttf);
+@include font-face('Lato', '../../fonts/Lato-Italic.ttf', 400, italic, ttf);
+@include font-face('Lato', '../../fonts/Lato-Light.ttf', 300, normal, ttf);
+@include font-face(
+	'Lato',
+	'../../fonts/Lato-LightItalic.ttf',
+	300,
+	italic,
+	ttf
+);
+@include font-face('Lato', '../../fonts/Lato-Regular.ttf', 400, normal, ttf);
+@include font-face('Lato', '../../fonts/Lato-Thin.ttf', 100, normal, ttf);
+@include font-face('Lato', '../../fonts/Lato-ThinItalic.ttf', 100, italic, ttf);
+
+// Include Raleway Fonts
+@include font-face(
+	'Raleway',
+	'../../fonts/Raleway-Black.ttf',
+	900,
+	normal,
+	ttf
+);
+@include font-face(
+	'Raleway',
+	'../../fonts/Raleway-BlackItalic.ttf',
+	900,
+	italic,
+	ttf
+);
+@include font-face('Raleway', '../../fonts/Raleway-Bold.ttf', 700, normal, ttf);
+@include font-face(
+	'Raleway',
+	'../../fonts/Raleway-BoldItalic.ttf',
+	700,
+	italic,
+	ttf
+);
+@include font-face(
+	'Raleway',
+	'../../fonts/Raleway-ExtraBold.ttf',
+	800,
+	normal,
+	ttf
+);
+@include font-face(
+	'Raleway',
+	'../../fonts/Raleway-ExtraBoldItalic.ttf',
+	800,
+	italic,
+	ttf
+);
+@include font-face(
+	'Raleway',
+	'../../fonts/Raleway-ExtraLight.ttf',
+	200,
+	normal,
+	ttf
+);
+@include font-face(
+	'Raleway',
+	'../../fonts/Raleway-ExtraLightItalic.ttf',
+	200,
+	italic,
+	ttf
+);
+@include font-face(
+	'Raleway',
+	'../../fonts/Raleway-Italic.ttf',
+	400,
+	italic,
+	ttf
+);
+@include font-face(
+	'Raleway',
+	'../../fonts/Raleway-Light.ttf',
+	300,
+	normal,
+	ttf
+);
+@include font-face(
+	'Raleway',
+	'../../fonts/Raleway-LightItalic.ttf',
+	300,
+	italic,
+	ttf
+);
+@include font-face(
+	'Raleway',
+	'../../fonts/Raleway-Medium.ttf',
+	500,
+	normal,
+	ttf
+);
+@include font-face(
+	'Raleway',
+	'../../fonts/Raleway-MediumItalic.ttf',
+	500,
+	italic,
+	ttf
+);
+@include font-face(
+	'Raleway',
+	'../../fonts/Raleway-Regular.ttf',
+	400,
+	normal,
+	ttf
+);
+@include font-face(
+	'Raleway',
+	'../../fonts/Raleway-SemiBold.ttf',
+	600,
+	normal,
+	ttf
+);
+@include font-face(
+	'Raleway',
+	'../../fonts/Raleway-SemiBoldItalic.ttf',
+	600,
+	italic,
+	ttf
+);
+@include font-face('Raleway', '../../fonts/Raleway-Thin.ttf', 100, normal, ttf);
+@include font-face(
+	'Raleway',
+	'../../fonts/Raleway-ThinItalic.ttf',
+	100,
+	italic,
+	ttf
+);
+
+// Setup Paragraphs
+.small,
+small {
+	font-size: 0.875rem;
+	font-family: 'Lato', sans-serif;
+	font-weight: 300;
+}
+
+.p,
+p,
+a {
+	font-size: 1rem;
+	font-family: 'Lato', sans-serif;
+	font-weight: 400;
+}
+
+.h1,
+h1 {
+	font-size: 2.8125rem;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 800;
+}
+
+.h2,
+h2 {
+	font-size: 1.875rem;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 700;
+}
+
+.h3,
+h3 {
+	font-size: 1.75rem;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 700;
+}
+
+.h4,
+h4 {
+	font-size: 1.375rem;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 600;
+}
+
+.h5,
+h5 {
+	font-size: 1.25rem;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 400;
+}
+
+.h6,
+h6 {
+	font-size: 1.125rem;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 400;
+}
+
+strong {
+	font-weight: 700;
+}
+
+p {
+	color: #707070;
+	line-height: 24px;
+}
+
+.text {
+	&-- {
+		&left {
+			text-align: left;
+		}
+
+		&center {
+			text-align: center;
+		}
+
+		&right {
+			text-align: right;
+		}
+
+		&light {
+			color: #fff;
+		}
+
+		&light-gray {
+			color: #707070;
+		}
+	}
+
+	&__primary {
+		color: #30a3f0;
+	}
+}

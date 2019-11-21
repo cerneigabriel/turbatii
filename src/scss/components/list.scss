@@ -1,0 +1,43 @@
+.list {
+	$list: &;
+	font-size: 1rem;
+
+	&--checkbox {
+		#{$list}__item {
+			position: relative;
+
+			i,
+			img {
+				margin-right: 19px;
+			}
+		}
+	}
+
+	&--arrow {
+		#{$list}__item {
+			position: relative;
+			padding-left: 30px;
+
+			&:not(:last-child) {
+				margin-bottom: 25px;
+			}
+
+			&::after {
+				content: '';
+				position: absolute;
+				top: 0;
+				bottom: 0;
+				left: 0;
+				margin: auto;
+				width: 6px;
+				height: 6px;
+				clip-path: polygon(0 0, 100% 50%, 0 100%);
+				background-color: #30a3f0;
+			}
+		}
+	}
+
+	&--light {
+		color: #707070;
+	}
+}
